@@ -3,7 +3,7 @@
 
 FROM debian:jessie
 
-MAINTAINER Wadim Kruse <wadim.kruse@gmail.com>
+MAINTAINER James Tryand <james.tryand@gmail.com>
 
 # Install curl
 RUN apt-get update && apt-get install -y curl
@@ -15,7 +15,7 @@ RUN addgroup eventstore \
 
 # Set environment variables
 USER eventstore
-ENV ES_VERSION 3.0.1
+ENV ES_VERSION 3.6.2
 ENV ES_HOME /opt/EventStore-OSS-Linux-v$ES_VERSION
 ENV EVENTSTORE_DB /data/db
 ENV EVENTSTORE_LOG /data/logs
